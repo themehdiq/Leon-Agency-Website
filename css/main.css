@@ -1,8 +1,7 @@
 :root {
     --main-color: #10cab7;
     --blue-color: #2c4755;
-    --grey-section: #fafafa;
-    --grey-rectangles-big-titles: #f6f6f6;
+    --grey-section: #f6f6f6;
     font-family: "Work Sans", sans-serif;
 }
 
@@ -72,7 +71,7 @@ header {
     width: 190px;
     padding: 15px;
     background-color: var(--grey-section);
-    margin-bottom: 2px;
+    margin-bottom: 1px;
     color: black;
     transition: .5s;
 
@@ -132,3 +131,37 @@ header {
 .text-zone p {
     font-size: 19px;
 }
+
+/* ------------------------------- FEATURES SECTION ------------------------------ */
+.features {
+    padding: 100px 220px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--grey-section);
+}
+
+.feature {
+    width: 27%;
+    height: 220px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feature i {
+    color: var(--main-color);
+    font-size: 55px;
+}
+
+.feature:last-child i {
+    font-size: 50px;
+}
+
+.feature p {
+    line-height: 25px;
+    font-size: 105%;
+    color: #777;
+}
+
+/* -------------------------- SERVICES SECTION --------------------------- */
