@@ -1,0 +1,134 @@
+:root {
+    --main-color: #10cab7;
+    --blue-color: #2c4755;
+    --grey-section: #fafafa;
+    --grey-rectangles-big-titles: #f6f6f6;
+    font-family: "Work Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+/* -------------------------- HEADER --------------------------- */
+
+header {
+    height: 100vh;
+}
+
+.top-header {
+    height: 10%;
+    background-color: white;
+    padding: 0 190px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.top-header img {
+    width: 55px;
+    height: 25px;
+}
+
+.nav {
+    position: relative;
+}
+
+.nav-divs {
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.nav-divs div {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    transition: width .5s;
+}
+
+.nav-divs div:nth-child(2) {
+    width: 20px;
+    align-self: flex-end;
+
+}
+
+.nav-links {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    visibility: hidden;
+}
+
+.nav-links a {
+    text-decoration: none;
+    display: block;
+    width: 190px;
+    padding: 15px;
+    background-color: var(--grey-section);
+    margin-bottom: 2px;
+    color: black;
+    transition: .5s;
+
+}
+
+.triangle {
+    position: absolute;
+    bottom: -14px;
+    right: 5px;
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid var(--grey-section);
+    border-left: 10px solid transparent;
+    visibility: hidden;
+}
+
+.nav:hover .nav-divs div {
+    width: 30px;
+}
+
+.nav:hover .triangle {
+    visibility: visible;
+}
+
+.nav:hover .nav-links {
+    visibility: visible;
+}
+
+.nav-links a:hover {
+    padding: 15px 25px;
+}
+
+
+.image-header {
+    height: 90%;
+    background-image: url("../images/ankit-manoharan-sVMzbc1ya6I-unsplash.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-zone {
+    width: 295px;
+    height: 100px;
+    line-height: 30px;
+}
+
+.text-zone h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: var(--main-color);
+}
+
+.text-zone p {
+    font-size: 19px;
+}
