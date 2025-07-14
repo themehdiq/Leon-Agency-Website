@@ -263,6 +263,18 @@ header {
     color: #797979;
 }
 
+.text-zone-portfolio h1 {
+    font-size: 620%;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin-bottom: -31px;
+    opacity: 0.1;
+}
+
+.text-zone-portfolio p {
+    font-size: 125%;
+}
+
 .portfolio-container {
     width: 100%;
     display: flex;
@@ -281,17 +293,7 @@ header {
     background-color: red;
 }
 
-.text-zone-portfolio h1 {
-    font-size: 620%;
-    font-weight: 800;
-    letter-spacing: -3px;
-    margin-bottom: -31px;
-    opacity: 0.1;
-}
 
-.text-zone-portfolio p {
-    font-size: 125%;
-}
 
 .single-portfolio h3,
 .single-portfolio p {
@@ -299,5 +301,92 @@ header {
 }
 
 .single-portfolio p {
+    opacity: 0.55;
+}
+
+/* ----------------------------- ABOUT SECTION --------------------------------- */
+.about {
+    padding: 50px 200px 100px;
+}
+
+.text-zone-about {
+    text-align: center;
+    margin-bottom: 80px;
+    color: #797979;
+}
+
+.text-zone-about h1 {
+    font-size: 620%;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin-bottom: -31px;
+    opacity: 0.15;
+}
+
+.text-zone-about p {
+    font-size: 125%;
+}
+
+.about-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.about-container .image {
+    width: 22%;
+    height: 360px;
+    position: relative;
+}
+
+.about-container .image::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 100%;
+    border-left: 20px solid #ebeced;
+    border-top: 40px solid #ebeced;
+    border-bottom: 40px solid #ebeced;
+    top: -40px;
+    left: -20px;
+}
+
+.about-container .image::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 80%;
+    border-left: 80px solid var(--main-color);
+    border-bottom: 80px solid var(--main-color);
+    top: -42px;
+    right: -130px;
+    z-index: -1;
+}
+
+.about-container .image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.about-container .container-text {
+    width: 60%;
+    padding: 20px;
+    line-height: 30px;
+}
+
+.about-container .container-text p:first-child {
+    font-weight: 700;
+}
+
+.about-container .container-text hr {
+    width: 50%;
+    margin: 60px 0 3% 0;
+    border-color: var(--main-color);
+}
+
+.about-container .container-text p:last-child {
     opacity: 0.55;
 }
