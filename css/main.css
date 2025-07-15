@@ -355,12 +355,12 @@ header {
 .about-container .image::after {
     content: "";
     position: absolute;
-    width: 100px;
+    width: 120px;
     height: 80%;
     border-left: 80px solid var(--main-color);
     border-bottom: 80px solid var(--main-color);
     top: -42px;
-    right: -130px;
+    right: -148px;
     z-index: -1;
 }
 
@@ -389,4 +389,61 @@ header {
 
 .about-container .container-text p:last-child {
     opacity: 0.55;
+}
+
+/* ----------------------------------- CONTACT ------------------------------------- */
+.contact {
+    padding: 75px 0 130px 0;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+.text-zone-contact {
+    margin-bottom: 80px;
+    color: #797979;
+}
+
+.text-zone-contact h1 {
+    font-size: 620%;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin-bottom: -31px;
+    opacity: 0.1;
+}
+
+.text-zone-contact p {
+    font-size: 125%;
+}
+
+.contact h2:first-of-type {
+    font-size: 210%;
+    font-weight: 800;
+    color: var(--blue-color);
+    margin: 20px 0;
+    letter-spacing: -2px;
+}
+
+.contact h2:last-of-type {
+    font-size: 200%;
+    font-weight: 800;
+    color: var(--main-color);
+    margin: 20px 0;
+}
+
+.contact i {
+    margin: 0 4px;
+}
+
+/* -------------------------------------- FOOTER ----------------------------------- */
+footer {
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+    background-color: var(--blue-color);
+    font-size: 115%;
+}
+
+footer span {
+    color: var(--main-color);
+    font-weight: 700;
 }
